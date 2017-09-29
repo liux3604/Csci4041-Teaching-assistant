@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9976bba0-cee3-436d-b706-ed83c313b368" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/~$lutions.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/~WRL1747.tmp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Solutions.docx" afterPath="$PROJECT_DIR$/Solutions.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Discussion3.txt" afterPath="$PROJECT_DIR$/Discussion3.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Solutions.docx" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
