@@ -60,3 +60,12 @@ Give traces, in the style of the trace given in this section, showing how the ke
 
 Suppose that top-down mergesort is modified to skip the call on merge() whenever a[mid] <= a[mid+1]. Prove that the number of compares used for an array in sorted order is linear.
 
+About how many compares will Quick.sort() make when sorting an array of N items that are all equal?
+
+Nuts and bolts. (G. J. E. Rawlins). You have a mixed pile of N nuts and N bolts and need to quickly find the corresponding pairs of nuts and bolts. Each nut matches exactly one bolt, and each bolt matches exactly one nut. By fitting a nut and bolt together, you can see which is bigger. But it is not possible to directly compare two nuts or two bolts. Given an efficient method for solving the problem.
+
+Criticize the following idea: to implement find the maximum in constant time in priority queue, why not keep track of the maximum value inserted so far, then return that value for find the maximum?
+
+Is an array that is sorted in decreasing order a max-oriented heap.
+
+Prove that sink-based heap construction uses at most 2n compares and at most n exchanges.
