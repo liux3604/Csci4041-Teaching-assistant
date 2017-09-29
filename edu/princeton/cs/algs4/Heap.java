@@ -94,7 +94,7 @@ public class Heap {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        String[] a = StdIn.readAllStrings();
+        Integer[] a = {5,4,10,9,11,200,77,44,66};
         Heap.sort(a);
         show(a);
     }

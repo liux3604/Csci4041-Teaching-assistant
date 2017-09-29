@@ -1,0 +1,49 @@
+Concepts to introduce:
+
+Space complexity: how much memory, in the worst case, is needed at any point in the algorithm. 
+In-place sorting: No need to create an extra helper array to temporarily store the elements. 
+Probabalistic guarantee of performance: The time complexity of the algorithm is guaranteed only after a random shuffling preprocessing step;
+Priority queue data type: An abstract data type(ADT) that stores items not necessarily in full sorted order. But it is interested in two functions: delete the maximum/minimum item, and insert. 
+Binary Heap data structure: a complete binary tree that has relates very closely with an array. Max heap and min heap. The index of the array used to represents a heap starts with the index 1 instead of zero. The left child and right child of a node(index n) has index (2n) and (2n+1) respectively. The height of an heap with node (N) is H=floor(log(N)).
+
+		     12
+     /        \
+    5         10	
+   /  \      /   \
+  2    3     5    7
+ / \  / \   / \  / \
+0  1  1  2  2 2  3  5
+
+		     12
+     /        \
+    5         10	
+   /  \      /   \
+  2    3     5    7
+ / \  / \   / \  / \
+0  1  1  2  2 2  3  5
+
+
+N=15;
+To create a heap from an array A[n] takes: 4*1+2*2+1*3=4+4+3=11 = N-1-logN times, proof: graphically color all the links.
+Repeatedly perform maxDel takes: 8*3+4*2+2*1 = 34. 
+T(n)      =             {2^H*H         + 2^(H-1)*(H-1) +...+ 2^2*(2)} + 2^1*(1)  
+2T(n)     = 2^(H+1)*H + {2^(H)*(H-1)   + 2^(H-1)*(H-2) +...+ 2^2*(1)}
+(1-2)T(n) = {2^H +2^(H-1)+...+2^2} +2^1*(1) - 2^(H+1)*H = (4-2^H*2)/(1-2) +2 - 2^(H+1)*H = 2^H*2-2 - 2^(H+1)*H = 2^(H+1)*(1-H) -2
+T(n) = 2^(H+1)*(H-1) -2 = O(N*H)=O(NlogN)
+
+Sorting algorithms:
+
+Sorting algorithm; Average time complexity; Time Complexity worst case; Average Space complexity; Worst case space complexity
+Selection sort(A child's algorithm);O(n^2);	O(n^2);	O(1); O(1);
+Insertion sort(in place algorithm);	O(n^2); O(n^2); O(1); O(1);
+Merge sort(devide and conquor); O(nlog(n)); O(nlog(n)); O(n)(helper array needed);O(n)(helper array needed);
+quick sort(probabalistic guarantee of performance); O(nlog(n)); O(n^2); O(log(n))(need to remember the devider index of the array into two subarrays); O(n); 
+heap sort(an application of the priority queue ADT);  O(nlog(n)) (form a heap takes N-logN time, repeately maxDel takes O(NlogN) times); O(1)(in-place); O(1);
+Counting sort,
+Radix sort,
+Bucket Sort, 
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
