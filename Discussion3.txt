@@ -6,7 +6,7 @@ Probabalistic guarantee of performance: The time complexity of the algorithm is 
 Priority queue data type: An abstract data type(ADT) that stores items not necessarily in full sorted order. But it is interested in two functions: delete the maximum/minimum item, and insert. 
 Binary Heap data structure: a complete binary tree that has relates very closely with an array. Max heap and min heap. The index of the array used to represents a heap starts with the index 1 instead of zero. The left child and right child of a node(index n) has index (2n) and (2n+1) respectively. The height of an heap with node (N) is H=floor(log(N)).
 
-		 12
+		     12
      /        \
     5         10	
    /  \      /   \
@@ -14,7 +14,7 @@ Binary Heap data structure: a complete binary tree that has relates very closely
  / \  / \   / \  / \
 0  1  1  2  2 2  3  5
 
-		 12
+		     12
      /        \
     5         10	
    /  \      /   \
