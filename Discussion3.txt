@@ -6,7 +6,7 @@ Probabalistic guarantee of performance: The time complexity of the algorithm is 
 Priority queue data type: An abstract data type(ADT) that stores items not necessarily in full sorted order. But it is interested in two functions: delete the maximum/minimum item, and insert. 
 Binary Heap data structure: a complete binary tree that has relates very closely with an array. Max heap and min heap. The index of the array used to represents a heap starts with the index 1 instead of zero. The left child and right child of a node(index n) has index (2n) and (2n+1) respectively. The height of an heap with node (N) is H=floor(log(N)).
 
-		     12
+		  12
      /        \
     5         10	
    /  \      /   \
@@ -14,7 +14,7 @@ Binary Heap data structure: a complete binary tree that has relates very closely
  / \  / \   / \  / \
 0  1  1  2  2 2  3  5
 
-		     12
+		 12
      /        \
     5         10	
    /  \      /   \
@@ -43,7 +43,20 @@ Counting sort,
 Radix sort,
 Bucket Sort, 
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+Exercises:
+Show in the style of the example trace with selection sort, how selection sort sorts the array
+E A S Y Q U E S T I O N
+
+Show in the style of the example trace with insertion sort, how insertion sort sorts the array
+E A S Y Q U E S T I O N
+
+Which method runs fastest for an array with all keys identical, selection sort or insertion sort?
+
+Suppose that we use insertion sort on a randomly ordered array where items have only one of three key values. Is the running time linear, quadratic, or something in between?
+
+Expensive exchange. A clerk at a shipping company is charged with the task of rearranging a number of large crates in order of the time they are to be shipped out. Thus, the cost of compares is very low (just look at the labels) relative to the cost of exchanges (move the crates). The warehouse is nearly full: there is extra space sufficient to hold any one of the crates, but not two. Which sorting method should the clerk use?
+
+Give traces, in the style of the trace given in this section, showing how the keys E A S Y Q U E S T I O N are sorted with top-down mergesort and with bottom-up mergesort.
+
+Suppose that top-down mergesort is modified to skip the call on merge() whenever a[mid] <= a[mid+1]. Prove that the number of compares used for an array in sorted order is linear.
+
